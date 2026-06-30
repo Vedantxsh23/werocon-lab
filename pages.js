@@ -1,0 +1,6 @@
+document.addEventListener('DOMContentLoaded',()=>{
+  if(!document.querySelector('link[href="wide.css"]')){const w=document.createElement('link');w.rel='stylesheet';w.href='wide.css';document.head.append(w)}
+  const n=document.querySelector('nav');
+  if(n&&!n.querySelector('[href="gallery.html"]')){const c=n.querySelector('[href="contact.html"]'),g=document.createElement('a');g.href='gallery.html';g.textContent='Gallery';c?n.insertBefore(g,c):n.append(g)}
+  const f=document.createElement('footer');f.innerHTML='<div><b>WeRoCon Lab</b><p>Wearable Robotics & Control Laboratory<br>Indian Institute of Technology Jodhpur</p></div><div><b>Visit the lab</b><p>IIT Jodhpur, NH 62, Nagaur Road<br>Karwar, Rajasthan 342030, India</p><p>werocon.lab@iitj.ac.in</p></div>';document.body.append(f)
+});
