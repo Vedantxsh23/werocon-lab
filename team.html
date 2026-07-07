@@ -9,22 +9,23 @@ footer{background:#142a3c;color:#d5dce2}.footin{min-height:215px;display:grid;gr
 .team-page .eyebrow{display:none}
 .team-page .lead{display:none}
 .team-page h1{margin:0 0 6px;font-size:clamp(32px,5vw,46px)}
-.pi-photo-card{position:relative;width:180px;aspect-ratio:3/4;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(17,24,32,.12);margin:0}
+.pi-photo-card{position:relative;width:170px;aspect-ratio:3/4;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(17,24,32,.12);margin:0}
+.pi-photo-card .overlay h3{font-family:'DM Sans';font-weight:700;font-size:16px;margin:0;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pi-photo-card img{width:100%;height:100%;object-fit:cover;display:block}
 .pi-photo-card .overlay{position:absolute;left:0;right:0;bottom:0;padding:14px 12px 12px;background:linear-gradient(180deg,rgba(6,20,34,0) 0%,rgba(6,20,34,.55) 45%,rgba(6,20,34,.92) 100%);color:#fff}
-.pi-photo-card .overlay h3{font-family:'DM Sans';font-weight:700;font-size:18px;margin:0;line-height:1.3;white-space:nowrap}
+
 
 .section-title{padding-top:10px}
 .interns-block{padding-top:4px;padding-bottom:50px}
 .interns-block .eyebrow{margin-bottom:2px}
 .interns-block h2{margin:4px 0 18px;font-size:32px;color:var(--blue)}
-.intern-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:18px}
-.intern-card{position:relative;aspect-ratio:3/4;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(17,24,32,.12);transition:transform .18s ease,box-shadow .18s ease}
+.intern-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:18px;justify-items:start}
+.intern-card{position:relative;width:170px;aspect-ratio:3/4;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(17,24,32,.12);transition:transform .18s ease,box-shadow .18s ease}
 .intern-card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(17,24,32,.1)}
 .intern-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
 .intern-card .overlay{position:absolute;left:0;right:0;bottom:0;padding:14px 12px 12px;background:linear-gradient(180deg,rgba(6,20,34,0) 0%,rgba(6,20,34,.55) 45%,rgba(6,20,34,.92) 100%);color:#fff}
 .intern-card .name-row{display:flex;align-items:center;justify-content:center;gap:8px}
-.intern-card h3{font-family:'DM Sans';font-size:clamp(12px,2.7vw,16px);font-weight:700;margin:0;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.intern-card h3{font-family:'DM Sans';font-size:16px;font-weight:700;margin:0;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .intern-card .name-row{max-width:100%;min-width:0}
 .intern-card .socials{margin:0}
 .intern-card .socials a{width:24px;height:24px;background:rgba(255,255,255,.18)}
@@ -68,7 +69,7 @@ footer{background:#142a3c;color:#d5dce2}.footin{min-height:215px;display:grid;gr
 <main>
 <section class="wrap team-page">
 <h1>Team</h1>
-<div style="margin-bottom:40px;margin-top:8px">
+<div style="margin-bottom:10px;margin-top:8px">
 <div class="pi-photo-card">
 <img src="images/saurav.png" alt="Dr. Saurav Kumar">
 <div class="overlay"><h3>Dr. Saurav Kumar</h3></div>
