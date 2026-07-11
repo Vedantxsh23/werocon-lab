@@ -6,7 +6,7 @@ h1,h2,h3{font-family:'Source Serif 4',serif}.eyebrow{color:#1c91ad;text-transfor
 .page-hero{padding:70px 0 40px}.page-hero h1{color:var(--blue);font-size:clamp(43px,6vw,73px);line-height:1.02;letter-spacing:-.035em;margin:13px 0 16px}.page-hero .intro{max-width:720px;font-size:20px;color:#435362;margin:0}
 
 .funding-band{background:#ffffff;padding-top:36px;padding-bottom:80px;margin-top:0}
-.sec-heading{color:var(--blue);font-size:44px;margin:0 0 8px}
+.sec-heading{color:var(--blue);font-size:38px;margin:0 0 8px}
 .sub-heading{color:var(--black);font-size:20px;font-weight:600;margin:0 0 20px;font-family:'Source Serif 4',serif}
 .sec-sub{color:#4f5d68;font-size:15px;max-width:680px;margin:0 0 32px}
 
@@ -22,28 +22,30 @@ h1,h2,h3{font-family:'Source Serif 4',serif}.eyebrow{color:#1c91ad;text-transfor
 .grant-item .desc u{text-decoration:underline}
 .grant-logo{width:150px;height:150px;display:grid;place-items:center;padding:6px}
 .grant-logo img{max-width:100%;max-height:100%;object-fit:contain}
+.grant-logo.grant-logo--xl{width:300px;height:300px}
 
 .sub-block{padding:60px 0 20px}
 .placeholder{background:#f4f6f7;border-left:5px solid #aab4bd;padding:24px 28px;color:#4f5d68;font-size:15px}
 
 footer{background:#142a3c;color:#d5dce2}
-.footin{min-height:215px;display:grid;grid-template-columns:auto 1fr auto;gap:50px;align-items:center;padding-top:34px;padding-bottom:34px}
-.address,.iitj>div{display:flex;flex-direction:column;justify-content:flex-start}
-.iitj{align-items:flex-start;display:flex;gap:8px}
-.lab-video{height:175px;width:auto;max-width:100%;border-radius:10px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.footin{display:grid;grid-template-columns:auto 1fr auto;gap:50px;align-items:stretch;padding-top:26px;padding-bottom:26px}.lab-video{align-self:center}
+.foot-link{display:inline-block;margin-top:8px}.address{display:flex;flex-direction:column;justify-content:space-between}.iitj .foot-body{display:flex;flex-direction:column;justify-content:space-between;flex:1}
+.iitj{max-width:380px}
+.lab-video{height:150px;width:auto;max-width:100%;border-radius:10px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .address small,.iitj small{display:block;color:#84a2b8;text-transform:uppercase;letter-spacing:.15em;margin-bottom:10px;font-size:12px}
 .address strong{display:block;color:white;font:600 22px 'Source Serif 4';margin-bottom:8px}
 .address p{margin:0;color:#bdc9d2}
 .iitj b{display:block;font:600 22px 'Source Serif 4';color:white;margin-bottom:8px}
 .iitj span{font-size:16px;color:#bdc9d2;line-height:1.65}
-.iitj .official-logo{display:block;width:125px;height:125px;object-fit:contain;background:white;border-radius:50%;padding:3px}
+.iitj .official-logo{display:block;flex-shrink:0;width:120px;height:120px;object-fit:contain;background:white;border-radius:50%;padding:3px;margin-top:44px}
 .copyright{background:#0d1d2a;text-align:center;padding:13px;color:#81909c;font-size:11px}
 
 @media(max-width:820px){
   .grant-item{grid-template-columns:1fr;gap:14px}
   .grant-logo{width:100px;height:100px;order:-1}
+  .grant-logo.grant-logo--xl{width:200px;height:200px}
   .footin{grid-template-columns:1fr;padding-top:50px;padding-bottom:50px}
-  .lab-video{width:100%;max-width:420px}
+  .lab-video{height:auto;width:100%;max-width:420px}
   .iitj{justify-self:start;text-align:left}
 }
 @media(max-width:540px){
@@ -59,7 +61,6 @@ footer{background:#142a3c;color:#d5dce2}
 <main>
 <section class="funding-band"><div class="wrap">
 <h2 class="sec-heading">Research Funding</h2>
-<p class="sec-sub">Ongoing sponsored research projects led by Dr. Saurav Kumar at the WeRoCon Laboratory, IIT Jodhpur.</p>
 
 <h3 class="sub-heading">Active Projects</h3>
 
@@ -83,12 +84,12 @@ footer{background:#142a3c;color:#d5dce2}
 <p class="dates">21/06/2026 - 21/06/2029, &#8377;71,97,730 total costs</p>
 <p class="desc"><u>Description</u>: The overall goal of this project is to develop physics-inspired neural networks for safe multi-terrain control of powered knee-ankle prosthetic legs.</p>
 </div>
-<div class="grant-logo"><img src="anrf-logo.png" alt="Anusandhan National Research Foundation logo"></div>
+<div class="grant-logo grant-logo--xl"><a href="https://prism.serbonline.in/SRProposalDetails/c30d04090302be18605d83a7a1416ad24b0103af0312696cb60ad847810763b3fa5cf920b20b4ebc3e819732959107619412895b3c735ddac4195c4193c9f748e2439c99993b70224e1d00e8aeb9c7fdfe79f48dcf55b22f5574cf79" target="_blank" rel="noreferrer"><img src="anrf-logo.png" alt="Anusandhan National Research Foundation logo"></a></div>
 </article>
 </div>
 
 </div></section>
 </main>
 
-<footer><div class="wrap footin"><video class="lab-video" src="werocon-video.mp4" autoplay muted loop playsinline></video><div class="address"><small>Lab address</small><strong>WeRoCon Lab</strong><p>Department of Electrical Engineering<br>Indian Institute of Technology Jodhpur<br>Karwar, Jodhpur – 342030, Rajasthan, India<br><a href="mailto:contact.werocon@gmail.com" style="color:#bdc9d2;text-decoration:underline">contact.werocon@gmail.com</a></p></div><div class="iitj"><div><small>Institute</small><b><a href="https://iitj.ac.in/" target="_blank" rel="noreferrer" style="color:white">Indian Institute of Technology Jodhpur</a></b><span>Main Campus<br>NH 62, Nagaur Road, Karwar,<br>Jodhpur – 342030, Rajasthan, India<br><a href="https://iitj.ac.in/" target="_blank" rel="noreferrer" style="color:#bdc9d2;text-decoration:underline">iitj.ac.in</a></span></div><a href="https://iitj.ac.in/" target="_blank" rel="noreferrer"><img class="official-logo" src="iitj-logo.png" alt="Official IIT Jodhpur logo"></a></div></div><div class="copyright">© 2026 WeRoCon Lab · IIT Jodhpur · <a href="https://vedantxsh23.github.io/Portfolio_vedant/vedant-portfolio.html#projects" target="_blank" rel="noreferrer" style="color:#9fb0bc;text-decoration:underline">Website Designed &amp; Developed by Vedant</a></div></footer>
+<footer><div class="wrap footin" style="grid-template-columns:auto 1fr auto;gap:50px;padding-top:34px;padding-bottom:34px"><video class="lab-video" src="werocon-video.mp4" autoplay muted loop playsinline></video><div class="address"><div class="foot-body"><strong>WeRoCon Lab</strong><p>Room No. 305<br>Department of Electrical Engineering<br>Indian Institute of Technology<br>Jodhpur<br>Rajasthan, India</p></div><a class="foot-link" href="mailto:contact.werocon@gmail.com" style="color:#bdc9d2;text-decoration:underline">contact.werocon@gmail.com</a></div><div class="iitj" style="display:flex;align-items:stretch;gap:16px;text-align:left;flex-direction:row-reverse"><a href="https://www.iitj.ac.in/" target="_blank" rel="noreferrer" style="align-self:flex-start"><img class="official-logo" src="iitj-logo.png" alt="Official IIT Jodhpur logo"></a><div class="foot-body"><b>Indian Institute of Technology Jodhpur</b><span style="font-size:16px;color:#bdc9d2;line-height:1.65;display:block">Main Campus<br>NH 62, Nagaur Road, Karwar,<br>Jodhpur – 342030,<br>Rajasthan, India</span><a class="foot-link" href="https://www.iitj.ac.in/" target="_blank" rel="noreferrer" style="color:#bdc9d2;text-decoration:underline">iitj.ac.in</a></div></div></div><div class="copyright">© 2026 WeRoCon Lab · IIT Jodhpur · <a href="https://vedantxsh23.github.io/Portfolio_vedant/vedant-portfolio.html#projects" target="_blank" rel="noreferrer" style="color:#9fb0bc;text-decoration:underline">Website Designed &amp; Developed by Vedant</a></div></footer>
 </body></html>
